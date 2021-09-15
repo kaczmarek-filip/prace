@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmiany kolorów</title>
+    <style>
+        #pudlo
+        {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" style="width: 100%; height: 400px; background-color: black;">
+    <div id="pudlo">
+        COkolwiek
+    </div>
+    </div>
+    <script>
+        //box = document.getElementById("box")
+        box=document.getElementById("box");
+    function funkcja()
+    {
+        // kolor_R = Math.random()*255
+        // kolor_G = Math.random()*255
+        // kolor_B = Math.random()*255
+        // kolor_R = Math.ceil(kolor_R)
+        // kolor_G = Math.ceil(kolor_G)
+        // kolor_B = Math.ceil(kolor_B)
+        document.getElementById("box").style.background = "red";
+    }
+    box.addEventListener("click", funkcja, true)
+    </script>
+</body>
+</html>
